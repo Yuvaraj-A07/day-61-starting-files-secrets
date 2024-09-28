@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Login{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Login</h1>
+            {{ render_form(forms) }}
+    </div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE HTML>-->
+
+<!--<html>-->
+<!--	<head>-->
+<!--		<title>Login</title>-->
+<!--	</head>-->
+<!--	<body>-->
+<!--        <div class="container">-->
+<!--		<h1>Login</h1>-->
+<!--        &lt;!&ndash; This is where our form will go. &ndash;&gt;-->
+<!--			<form method="POST" action="{{ url_for('login') }}" novalidate>-->
+<!--    			{{ forms.csrf_token }}-->
+<!--				<p>-->
+<!--                    {{ forms.email.label }} <br> {{ forms.email(size=30) }}-->
+<!--                    {% for err in forms.email.errors %}-->
+<!--                    <span style="color:red">{{ err }}</span>-->
+<!--                    {% endfor %}-->
+<!--                </p>-->
+
+<!--                <p>-->
+<!--                    {{ forms.password.label }} <br> {{  forms.password(size=30) }}-->
+<!--                    {% for err in forms.password.errors %}-->
+<!--                    <span style="color:red">{{ err }}</span>-->
+<!--                    {% endfor %}-->
+<!--                </p>-->
+<!--				{{ forms.submit }}-->
+
+<!--&lt;!&ndash;    			<input type="submit" value="Log In">&ndash;&gt;-->
+<!--			</form>-->
+<!--        </div>-->
+<!--	</body>-->
+<!--</html>-->
